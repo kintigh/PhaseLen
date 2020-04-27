@@ -56,7 +56,7 @@ var model:boolean;  tlimit, K: real;
 
 begin  { main program block }
   copyright('calculate_K',version,years,
-    'Examine Ihat Performance');
+    'Calculate K for Cowgill''s Ihat Interval Estimate Formula ');
 
   repeat
     tlimit:=readreal('Normal Std. Cutoff: +/- (0 for Rectangular Distribution)',0,10.0,'2.0');
