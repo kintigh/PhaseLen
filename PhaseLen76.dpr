@@ -327,7 +327,7 @@ begin
 end;
 
 procedure calendar_stats(count: integer; var date_vector,weight: date_array; weighted: boolean);
-var weightsum, i: integer; sum: real;
+var i: integer; weightsum, sum: real;
 begin
   sortdate(count,date_vector,weight);
 
@@ -343,11 +343,11 @@ begin
   for i:=1 to count do
     if weighted then begin
       sum:=sum+date_vector[i]/weight[i];
-      weightsum:=weightsum+weight[i];
+      weightsum:=weightsum+1/weight[i];
     end
     else begin
       sum:=sum+date_vector[i];
-      inc(weightsum);
+      weightsum:=weightsum+1.0;
     end;
   cmean_date:=roundto(round(sum/weightsum),rounddates);
 
