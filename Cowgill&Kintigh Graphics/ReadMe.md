@@ -1,0 +1,1 @@
+* **CowgillC14.R** RStudio procedures creating graphics for Cowgill and Kintigh 2020
