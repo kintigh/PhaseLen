@@ -800,7 +800,7 @@ end;
 
 procedure date_N_SD_parms;
 begin
-  ndate:=readint('Number of Dates/Sample',1,maxint,'');
+  ndate:=readint('Number of Dates/Sample',1,maxdate,'');
   generate_std:=readint('Standard Error of Dates',0{1},1000,'');
 end;
 
@@ -887,7 +887,7 @@ end;
 {obtain a sample set of dates}
 procedure sample_set(pop_span,middle: integer);
 const replacement=false;
-var i,start_date, ignore: integer;
+var i,start_date: integer;
 begin
   randomize_order(ndate,date_std);
   start_date:=middle-(pop_span div 2);  {start date of phase}
