@@ -9,7 +9,7 @@ library("plyr")
 
 #
 setwd()   
-setwd("c:/users/kintigh/dropbox (ASU)/Archy Research/C14/AmAntiq/Cowgll Figs")
+setwd("c:/users/kintigh/Dropbox (Personal)/Github/Phaselen/Cowgill&Kintigh Graphics")
 
 #=======================================
 # Cowgill Figure - Fig 1
